@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/logo.png">
+  <title>About Us | Gillania Group</title>
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Roboto&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css" rel="stylesheet" />
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-CmZxxEeWqAfBMQx5zvWNjGow+w+vTTzOuws6KZhs9ACB0zPp8DQyrn8Xf6Z3Zf1ZEtFPkHxS1kkxFplRRfaH1g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+</head>
+
+<body>
+
+  <div id="preloader">
+    <div class="preloader-inner">
+      <img src="images/logo1.png" alt="Gillania Group Logo" class="preloader-logo">
+      <div class="golden-ring"></div>
+      
+    </div>
+  </div>
+
+ <!-- Navigation Bar -->
+<nav>
+  <div class="nav-bar">
+      <i class='bx bx-menu sidebarOpen'></i>
+      
+      <!-- Website logo -->
+      <span class="logo navLogo">
+          <img src="images/logo1.png" alt="logo">   
+      </span>
+
+      <!-- Menu container -->
+      <div class="menu">
+          <div class="logo-toggle">
+              <span class="logo">
+                <img src="images/logo.png" alt="logo">
+              </span>
+              <i class='bx bx-x siderbarClose'></i>
+          </div>
+
+          <!-- Navigation Links -->
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="media-press.html">Media & Press</a></li>
+            <li><a href="contact.html">Contact US</a></li>
+          </ul>
+      </div>
+
+      <!-- Dark/Light Mode Toggle and Search Box -->
+      <div class="darkLight-searchBox">
+          
+          <!-- Dark and light mode toggle icons -->
+          <div class="dark-light">
+              <i class='bx bx-moon moon'></i> <!-- Moon icon for dark mode -->
+              <i class='bx bx-sun sun'></i>   <!-- Sun icon for light mode -->
+          </div>
+
+          <!-- Search Box -->
+          <div class="searchBox">
+              <!-- Toggle buttons for search box (open/close) -->
+              <div class="searchToggle">
+                  <i class='bx bx-x cancel'></i>    <!-- Close icon for search box -->
+                  <i class='bx bx-search search'></i> <!-- Search icon to open search box -->
+              </div>
+
+              <!-- Search input field -->
+              <div class="search-field">
+                  <input type="text" placeholder="Search..."> <!-- Search input box -->
+                  <i class='bx bx-search'></i> <!-- Search icon next to input field -->
+              </div>
+          </div>
+      </div>
+  </div>
+</nav>
+
+
+  <section class="our-story bg-black text-gold py-20 px-6">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-4xl font-serif text-center mb-12">Our Legacy</h2>
+      <div class="timeline space-y-16 relative">
+        
+        <!-- Timeline Line -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 h-full border-l-2 border-gold"></div>
+        
+        <!-- Timeline Block -->
+        <div class="timeline-block flex flex-col-reverse md:flex-row items-center md:items-start relative" data-aos="fade-up">
+          <div class="w-full md:w-1/2 md:pr-10 text-right">
+            <div class="timeline-date">1998</div>
+            <h3 class="text-2xl font-medium mb-2">The Genesis</h3>
+            <p class="text-base leading-relaxed">
+              In the heart of the Arabian Peninsula, the Gillania legacy was born—what began as a private family office became a sanctuary for elite wealth stewardship.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 relative flex justify-center mb-6 md:mb-0">
+            <img src="images/office.png" alt="Founding" class="rounded-2xl shadow-xl w-full max-w-md">
+          </div>
+        </div>
+
+        <div class="timeline-block flex flex-col-reverse md:flex-row items-center md:items-start relative" data-aos="fade-up">
+         <div class="w-full md:w-1/2 md:pl-10 text-left">
+            <div class="timeline-date">1990</div>
+            <h3 class="text-2xl font-medium mb-2">Rise to Influence</h3>
+            <p class="text-base leading-relaxed">
+              As global opportunities unfolded, Gillania Group emerged as a trusted name in discreet, high-yield ventures—bridging royal families, visionaries, and world leaders.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 relative flex justify-center mb-6 md:mb-0">
+            <img src="images/influence.jpg" alt="Growth" class="rounded-2xl shadow-xl w-full max-w-md">
+          </div>
+        </div>
+  
+        <div class="timeline-block flex flex-col-reverse md:flex-row items-center md:items-start relative" data-aos="fade-up">
+          <div class="w-full md:w-1/2 md:pr-10 text-right">
+            <div class="timeline-date">1985</div>
+            <h3 class="text-2xl font-medium mb-2">A Global Standard</h3>
+            <p class="text-base leading-relaxed">
+              Today, Gillania Group sets the standard in global private equity and elite asset management—where heritage meets innovation in every portfolio we shape.
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 relative flex justify-center mb-6 md:mb-0">
+            <img src="images/global.png" alt="Global Expansion" class="rounded-2xl shadow-xl w-full max-w-md">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="vision-mission">
+    <!-- Row 1: Vision + Mission -->
+    <div class="vision-mission-row">
+      <div class="vision-box">
+        <h3>Our Vision</h3>
+        <p>
+          To be the #1 choice for luxury and strategic investments, empowering global growth through timeless values and bold innovation.
+        </p>
+      </div>
+      <div class="mission-box">
+        <h3>Our Mission</h3>
+        <p>
+          To redefine global influence by creating elite partnerships, nurturing sovereign wealth, and setting benchmarks in luxury asset management across continents.
+        </p>
+      </div>
+    </div>
+  
+    <!-- Row 2: Identity (Video background) -->
+    <div class="lifestyle-video-box">
+      <video autoplay muted loop playsinline class="video-bg">
+        <source src="images/videos/villla (6).mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <div class="lifestyle-content">
+        <h3>Our Identity</h3>
+        <p data-aos="fade-up">
+          Gillania Group stands as a symbol of power, influence, and generational wealth. With strategic holdings across sectors including real estate, private equity, aviation, energy, and technology, we serve as trusted stewards for high-net-worth families, royal alliances, and visionary entrepreneurs.
+        </p>
+        <p data-aos="fade-up">
+          Our operations span across Pakistan, the United Kingdom, the United Arab Emirates, Saudi Arabia, Romania, and other high-growth markets. We invest with purpose, operate with discretion, and partner with entities that share our commitment to long-term prosperity and legacy preservation.
+        </p>
+        <p data-aos="fade-up">
+          This digital presence mirrors the elegance and exclusivity of our brand. With a tailored interface, immersive experiences, and gold-accented luxury design, our platform is more than a website—it is a gateway into a world of elite investment opportunities and unparalleled global access.
+        </p>
+        <p data-aos="fade-up">
+          At Gillania, we don’t follow trends. We set them. We do not chase opportunities. We create them. Our legacy is not only defined by the wealth we manage—but by the futures we help shape.
+        </p>
+        <a href="portfolio.html" class="discover-btn" data-aos="fade-up">Discover More</a>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="our-values">
+    <h2>Our Values</h2>
+    <div class="values-grid">
+      <div class="value-card">
+        <div class="value-icon"><i class="fas fa-coins"></i></div>
+        <h4>Wealth</h4>
+      </div>
+      <div class="value-card">
+        <div class="value-icon"><i class="fas fa-crown"></i></div>
+        <h4>Exclusivity</h4>
+      </div>
+      <div class="value-card">
+        <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+        <h4>Innovation</h4>
+      </div>
+      <div class="value-card">
+        <div class="value-icon"><i class="fas fa-globe"></i></div>
+        <h4>Global Reach</h4>
+      </div>
+      <div class="value-card">
+        <div class="value-icon"><i class="fas fa-scale-balanced"></i></div>
+        <h4>Integrity</h4>
+      </div>
+    </div>
+  </section>
+  
+  
+  <section class="founder-section">
+    <div class="founder-container">
+      <div class="founder-image">
+        <!-- <img src="images/founder.jpg" alt="Founder of Gillania Group"> -->
+      </div>
+      <div class="founder-content" data-aos="fade-up">
+        <h2>Our Founder</h2>
+        <h3>Syed Gillani</h3>
+        <p class="founder-title">A Visionary Leader with a Generous Heart</p>
+        <p>
+          Syed Gillani is not just a businessman; he is a leader who believes in making a difference. Starting his journey at just 14 years old, he built Gillania Group into a global empire through relentless hard work and determination. But beyond his success, he is known for his kind heart and unwavering commitment to helping others.
+        </p>
+        <p>
+          Despite his wealth and achievements, Syed Gillani has always prioritized giving back. He actively supports charitable causes, helps the less fortunate, and donates to those in need. His generosity is not just a part of his business—it is a part of who he is.
+        </p>
+        <p>
+          Through Gillania Group, he continues to empower communities, support struggling families, and extend a helping hand to those who need it most. His belief in lifting others up sets him apart as a leader who values people as much as success.
+        </p>
+        <p class="founder-quote">
+          "Success is not just about what you achieve, but what you give back." <span>— Syed Gillani</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="leadership-section">
+    <h2>Leadership Team</h2>
+    <div class="leadership">
+      <!-- Leader Card -->
+      <div class="leader-card">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Elrich">
+        <h4>John Elrich</h4>
+        <p class="title">Chief Executive Officer</p>
+        <p class="bio">With over 20 years in global finance, John leads Gillania with a vision for elite investment strategy.</p>
+        <p class="contact"><i class="fas fa-phone-alt"></i> +1 234 567 890</p>
+        <p class="contact"><i class="fas fa-envelope"></i> john@gillaniagroup.com</p>
+        <a href="#" class="linkedin-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+  
+      <!-- Leader Card -->
+      <div class="leader-card">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sara Venz">
+        <h4>Sara Venz</h4>
+        <p class="title">Managing Director</p>
+        <p class="bio">Sara brings an unmatched track record in strategic partnerships and high-yield growth ventures.</p>
+        <p class="contact"><i class="fas fa-phone-alt"></i> +44 789 123 456</p>
+        <p class="contact"><i class="fas fa-envelope"></i> sara@gillaniagroup.com</p>
+        <a href="#" class="linkedin-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+  
+      <!-- Leader Card -->
+      <div class="leader-card">
+        <img src="https://randomuser.me/api/portraits/men/85.jpg" alt="Ahmed Khan">
+        <h4>Ahmed Khan</h4>
+        <p class="title">Regional Head (Middle East)</p>
+        <p class="bio">Based in Dubai, Ahmed oversees operations and client relations across the Middle East portfolio.</p>
+        <p class="contact"><i class="fas fa-phone-alt"></i> +971 50 123 4567</p>
+        <p class="contact"><i class="fas fa-envelope"></i> ahmed@gillaniagroup.com</p>
+        <a href="#" class="linkedin-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+      </div>
+    </div>
+  </section>
+  
+
+  <section class="global-presence">
+    <h2>Global Presence</h2>
+    <div id="map"></div>
+    <div class="locations">
+      <p><strong>Pakistan:</strong> Lahore HQ, multiple strategic real estate projects</p>
+      <p><strong>UK:</strong> Financial partnerships in London</p>
+      <p><strong>UAE:</strong> Collaboration in luxury AI real estate</p>
+      <p><strong>Saudi Arabia:</strong> Energy sector investments</p>
+      <p><strong>Romania:</strong> Tech innovation hubs</p>
+    </div>
+  </section>
+  
+
+  <section class="luxury-partnerships">
+    <h2>Luxury Partnerships</h2>
+    <p class="partnership-intro">We proudly collaborate with prestigious global brands to deliver elite investment experiences and exclusive ventures.</p>
+    
+    <div class="partners-grid">
+      <!-- Tesla -->
+      <div class="partner-card">
+        <img src="images/Tesla_logo.png" alt="Tesla Logo" class="partner-logo">
+        <h4>Tesla Motors</h4>
+        <p class="partnership-role">Official EV Investment Partner</p>
+      </div>
+  
+      <!-- Royal Yacht -->
+      <div class="partner-card">
+        <img src="images/Benetti-Logo-.png" alt="Royal Yacht Logo" class="partner-logo">
+        <h4>Royal Yacht Holdings</h4>
+        <p class="partnership-role">Strategic Collaborator</p>
+      </div>
+  
+      <!-- Imperium Jets -->
+      <div class="partner-card">
+        <img src="images/embraer-logo-.png" alt="Jet Logo" class="partner-logo">
+        <h4>Imperium Jets</h4>
+        <p class="partnership-role">Exclusive Aviation Partner</p>
+      </div>
+  
+      <!-- Apple -->
+      <div class="partner-card">
+        <img src="images/apple-logo.png" alt="Apple Logo" class="partner-logo">
+        <h4>Apple Inc.</h4>
+        <p class="partnership-role">Technological Strategy Alliance</p>
+      </div>
+  
+      <!-- Amazon -->
+      <div class="partner-card">
+        <img src="images/Amazon_logo.webp" alt="Amazon Logo" class="partner-logo">
+        <h4>Amazon Global</h4>
+        <p class="partnership-role">Supply Chain Investment Partner</p>
+      </div>
+  
+      <!-- Netflix -->
+      <div class="partner-card">
+        <img src="images/Netflix_logo.svg" alt="Netflix Logo" class="partner-logo">
+        <h4>Netflix Studios</h4>
+        <p class="partnership-role">Content Monetization Partner</p>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>Gillania Group</h3>
+      <p>Empowering elite investments in luxury, real estate, and innovation.</p>
+    </div>
+    <div class="footer-links">
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="media-press.html">Media & Press</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Investments</h4>
+        <ul>
+          <li><a href="#">Real Estate</a></li>
+          <li><a href="#">Luxury Assets</a></li>
+          <li><a href="#">Private Equity</a></li>
+          <li><a href="#">Stocks</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Gillania Group. All rights reserved.</p>
+  </div>
+</footer>
+
+
+<button class="contact-btn" onclick="window.location.href='contact.html'">Let’s Talk</button>
+  
+  <script src="js/script.js"></script>
+  <script>
+    const map = L.map('map').setView([30, 30], 2); // Global view
+  
+    // Load OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '',
+    }).addTo(map);
+  
+    // Office Locations with Details
+    const offices = [
+      {
+        coords: [31.5497, 74.3436],
+        title: "🇵🇰 Pakistan",
+        content: "Lahore HQ<br>Multiple strategic real estate projects"
+      },
+      {
+        coords: [51.5072, -0.1276],
+        title: "🇬🇧 UK",
+        content: "Financial partnerships in London"
+      },
+      {
+        coords: [25.2048, 55.2708],
+        title: "🇦🇪 UAE",
+        content: "Luxury AI real estate collaborations"
+      },
+      {
+        coords: [24.7136, 46.6753],
+        title: "🇸🇦 Saudi Arabia",
+        content: "Investments in energy sector"
+      },
+      {
+        coords: [44.4268, 26.1025],
+        title: "🇷🇴 Romania",
+        content: "Tech innovation hubs"
+      },
+    ];
+  
+    // Add markers
+    offices.forEach(office => {
+      L.marker(office.coords)
+        .addTo(map)
+        .bindPopup(`<strong>${office.title}</strong><br>${office.content}`);
+    });
+  </script>
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <script>
+  AOS.init({
+    duration: 1000, // animation duration
+    once: true      // only animate once
+  });
+  </script>
+
+</body>
+
+</html>

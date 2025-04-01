@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo1.png">
+  <title>Portfolio | Gillania Group</title>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <div id="preloader">
+    <div class="preloader-inner">
+      <img src="images/logo1.png" alt="Gillania Group Logo" class="preloader-logo">
+      <div class="golden-ring"></div>
+    </div>
+  </div>
+
+<!-- Navigation Bar -->
+<nav>
+    <div class="nav-bar">
+        <i class='bx bx-menu sidebarOpen'></i>
+        
+        <!-- Website logo -->
+        <span class="logo navLogo">
+            <img src="images/logo1.png" alt="logo">   
+        </span>
+
+        <!-- Menu container -->
+        <div class="menu">
+            <div class="logo-toggle">
+                <span class="logo">
+                  <img src="images/logo.png" alt="logo">
+                </span>
+                <i class='bx bx-x siderbarClose'></i>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="media-press.html">Media & Press</a></li>
+              <li><a href="contact.html">Contact US</a></li>
+            </ul>
+        </div>
+
+        <!-- Dark/Light Mode Toggle and Search Box -->
+        <div class="darkLight-searchBox">
+            
+            <!-- Dark and light mode toggle icons -->
+            <div class="dark-light">
+                <i class='bx bx-moon moon'></i> <!-- Moon icon for dark mode -->
+                <i class='bx bx-sun sun'></i>   <!-- Sun icon for light mode -->
+            </div>
+
+            <!-- Search Box -->
+            <div class="searchBox">
+                <!-- Toggle buttons for search box (open/close) -->
+                <div class="searchToggle">
+                    <i class='bx bx-x cancel'></i>    <!-- Close icon for search box -->
+                    <i class='bx bx-search search'></i> <!-- Search icon to open search box -->
+                </div>
+
+                <!-- Search input field -->
+                <div class="search-field">
+                    <input type="text" placeholder="Search..."> <!-- Search input box -->
+                    <i class='bx bx-search'></i> <!-- Search icon next to input field -->
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Portfolio Page - Our Investments -->
+<section class="portfolio-intro">
+    <!-- Portfolio Introduction -->
+  <div class="portfolio-intro">
+    <h2>Our Investments</h2>
+    <p>
+      At <strong>Gillania Group</strong>, our investment philosophy is built on diversification, excellence, and global vision. With a multi-billion-dollar portfolio spanning <em>technology, real estate, private equity, and rare luxury assets</em>, we strategically allocate capital where legacy meets opportunity.
+    </p>
+    <p>
+      From landmark skyscrapers in Dubai and exclusive villas in the Riviera, to early-stage equity in global tech giants like Tesla and Amazon, every Gillania investment is a symbol of our elite access, risk intelligence, and long-term returns. Our approach is not merely transactional — it's transformational.
+    </p>
+    <p>
+      As a sovereign-backed, privately held multinational, we provide our partners and stakeholders with rare entry points into premium ventures, future-ready innovations, and generational assets that go beyond markets — they shape industries. Welcome to a portfolio where prestige powers performance.
+    </p>
+   </div>
+</section>
+
+<!-- Investment Categories -->
+<section class="investment-section">  
+    <div class="investment-tabs">
+  
+      <!-- Tab Buttons Row -->
+      <div class="tab-labels">
+        <input type="radio" name="investment" id="stocks" checked>
+        <label for="stocks">Stocks</label>
+  
+        <input type="radio" name="investment" id="realestate">
+        <label for="realestate">Real Estate</label>
+  
+        <input type="radio" name="investment" id="luxury">
+        <label for="luxury">Luxury Assets</label>
+      </div>
+  
+      <!-- Stocks Content -->
+      <div class="tab-content" id="stocks-content">
+        <h3>Stocks</h3>
+        <p>Our equity strategy focuses on future-defining sectors with long-term growth potential.</p>
+        <canvas id="stockChart" class="chart"></canvas>
+        <div class="brand-logos">
+          <img src="images/icons/tesl.png" alt="Tesla">
+          <img src="images/icons/amazo.png" alt="Amazon">
+          <img src="images/icons/google.png" alt="Google">
+        </div>
+      </div>
+  
+      <!-- Real Estate Content -->
+      <div class="tab-content" id="realestate-content">
+        <h3>Real Estate</h3>
+        <div class="property-grid">
+          <div class="property-card">
+            <img src="images/dst.webp" alt="Skyscraper">
+            <div class="details">
+              <h4>Dubai Skyline Tower</h4>
+              <p>Investment: $25M</p>
+              <p>Returns: 14% YoY</p>
+            </div>
+          </div>
+          <div class="property-card">
+            <img src="images/villa.jpg" alt="Luxury Villa">
+            <div class="details">
+              <h4>French Riviera Villa</h4>
+              <p>Investment: $18M</p>
+              <p>Returns: 12% YoY</p>
+            </div>
+          </div>
+          <div class="property-card">
+            <img src="images/lct.webp" alt="Corporate Tower">
+            <div class="details">
+              <h4>London Corporate Tower</h4>
+              <p>Investment: $35M</p>
+              <p>Returns: 15% YoY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Luxury Assets Content -->
+      <div class="tab-content" id="luxury-content">
+        <h3>Luxury Assets</h3>
+        <div class="luxury-carousel">
+          <div class="luxury-card">
+            <img src="images/supercar.jpg" alt="Supercar">
+            <h4>Tesla Model 3</h4>
+          </div>
+          <div class="luxury-card">
+            <img src="images/ppc.jpg" alt="Art Collection">
+            <h4>Picasso Private Collection</h4>
+          </div>
+          <div class="luxury-card">
+            <img src="images/gst.jpg" alt="Private Jet">
+            <h4>Gulfstream G700</h4>
+          </div>
+          <div class="luxury-card">
+            <img src="images/ryv.jpg" alt="Custom Yacht">
+            <h4>Royal Yacht Velluto</h4>
+          </div>
+        </div>
+      </div>
+  
+    </div>
+</section>
+
+<!-- Case Studies Accordion -->
+<section class="Case-Studies-section">
+    <div class="case-studies">
+      <h3>Case Studies</h3>
+  
+      <div class="accordion">
+        <!-- Case 1 -->
+        <div class="accordion-item">
+          <button class="accordion-header">Dubai Tower Acquisition</button>
+          <div class="accordion-content">
+            <p><strong>Goal:</strong> Expand regional presence</p>
+            <p><strong>Strategy:</strong> High-rise luxury leasing</p>
+            <p><strong>Outcome:</strong> 14% ROI in 12 months</p>
+          </div>
+        </div>
+  
+        <!-- Case 2 -->
+        <div class="accordion-item">
+          <button class="accordion-header">Netflix Content Licensing</button>
+          <div class="accordion-content">
+            <p><strong>Goal:</strong> Monetize original content IP</p>
+            <p><strong>Strategy:</strong> Long-term streaming partnerships</p>
+            <p><strong>Outcome:</strong> $6.4M net profit over 18 months</p>
+          </div>
+        </div>
+  
+        <!-- Case 3 -->
+        <div class="accordion-item">
+          <button class="accordion-header">Tech Disruptor Equity Stake</button>
+          <div class="accordion-content">
+            <p><strong>Goal:</strong> Future-proof investment in AI</p>
+            <p><strong>Strategy:</strong> Early-stage VC infusion</p>
+            <p><strong>Outcome:</strong> 400% return post Series C</p>
+          </div>
+        </div>
+  
+        <!-- Case 4 -->
+        <div class="accordion-item">
+          <button class="accordion-header">Bespoke Yacht Partnership</button>
+          <div class="accordion-content">
+            <p><strong>Goal:</strong> Expand presence in ultra-luxury asset space</p>
+            <p><strong>Strategy:</strong> Co-develop custom yachts with European shipyards</p>
+            <p><strong>Outcome:</strong> 22% ROI over 2 years with resale value boost</p>
+          </div>
+        </div>
+  
+        <!-- Case 5 -->
+        <div class="accordion-item">
+          <button class="accordion-header">Silicon Valley Angel Round</button>
+          <div class="accordion-content">
+            <p><strong>Goal:</strong> Early-stage access to deep-tech innovation</p>
+            <p><strong>Strategy:</strong> Strategic angel investment in AI robotics startup</p>
+            <p><strong>Outcome:</strong> Equity multiplied 10x at Series B</p>
+          </div>
+        </div>
+  
+        <!-- Case 6 -->
+        <div class="accordion-item">
+          <button class="accordion-header">London Heritage Hotel Redevelopment</button>
+          <div class="accordion-content">
+            <p><strong>Goal:</strong> Revitalize historic asset in prime real estate</p>
+            <p><strong>Strategy:</strong> Joint venture with global hospitality brand</p>
+            <p><strong>Outcome:</strong> 19% ROI with premium suite occupancy at 92%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<!-- Video/Testimonial Section -->
+<section class="Testimonial-Section">
+    <div class="video-testimonials">
+      <h3>Investor Experiences</h3>
+      <div class="video-wrapper">
+        <video controls muted poster="images/global.png">
+          <source src="images/videos/villa (2).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+</section>
+  
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Gillania Group</h3>
+        <p>Empowering elite investments in luxury, real estate, and innovation.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="media-press.html">Media & Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Investments</h4>
+          <ul>
+            <li><a href="#">Real Estate</a></li>
+            <li><a href="#">Luxury Assets</a></li>
+            <li><a href="#">Private Equity</a></li>
+            <li><a href="#">Stocks</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Gillania Group. All rights reserved.</p>
+    </div>
+</footer>
+  
+<button class="contact-btn" onclick="window.location.href='contact.html'">Let’s Talk</button>
+
+<script src="js/script.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  let stockChartInstance;
+
+  function renderStockChart() {
+    const canvas = document.getElementById('stockChart');
+    const ctx = canvas.getContext('2d');
+
+    // Destroy if already initialized
+    if (stockChartInstance) {
+      stockChartInstance.destroy();
+    }
+
+    stockChartInstance = new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['Tech', 'AI', 'Green Energy', 'FinTech', 'Biotech'],
+        datasets: [{
+          label: 'Investment Allocation (%)',
+          data: [30, 25, 20, 15, 10],
+          backgroundColor: '#FFD700',
+          borderRadius: 5
+        }]
+      },
+      options: {
+        plugins: {
+          legend: { display: false }
+        },
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: { color: '#ccc' },
+            grid: { color: '#444' }
+          },
+          x: {
+            ticks: { color: '#ccc' },
+            grid: { color: '#444' }
+          }
+        }
+      }
+    });
+  }
+
+  // Handle tab switching
+  document.addEventListener('DOMContentLoaded', () => {
+    const radios = document.querySelectorAll('input[name="investment"]');
+
+    radios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        const selected = document.getElementById(`${radio.id}-content`);
+        document.querySelectorAll('.tab-content').forEach(c => c.style.display = 'none');
+        selected.style.display = 'block';
+
+        // Render the chart only if Stocks tab is selected
+        if (radio.id === 'stocks') {
+          setTimeout(() => renderStockChart(), 100); // Delay ensures it's visible
+        }
+      });
+    });
+
+    // Trigger default tab on load
+    const defaultRadio = document.querySelector('input[name="investment"]:checked');
+    defaultRadio.dispatchEvent(new Event('change'));
+  });
+</script>
+
+<script>
+    const radios = document.querySelectorAll('input[name="investment"]');
+    const tabs = document.querySelectorAll('.tab-content');
+  
+    radios.forEach(radio => {
+      radio.addEventListener('change', () => {
+        tabs.forEach(tab => tab.style.display = 'none');
+        const selected = document.getElementById(`${radio.id}-content`);
+        if (selected) selected.style.display = 'block';
+      });
+    });
+  
+    // Trigger default tab on load
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelector('input[name="investment"]:checked').dispatchEvent(new Event('change'));
+    });
+</script>
+  
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const items = document.querySelectorAll(".accordion-item");
+  
+      items.forEach(item => {
+        const header = item.querySelector(".accordion-header");
+        header.addEventListener("click", () => {
+          const isActive = item.classList.contains("active");
+  
+          // Close all
+          items.forEach(i => i.classList.remove("active"));
+  
+          // Toggle current
+          if (!isActive) {
+            item.classList.add("active");
+          }
+        });
+      });
+    });
+</script>
+  
+</body>
+</html>

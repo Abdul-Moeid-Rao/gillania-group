@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo1.png">
+  <title>Gillania Group</title>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+</head>
+<body>
+
+<div id="preloader">
+    <div class="preloader-inner">
+      <img src="images/logo1.png" alt="Gillania Group Logo" class="preloader-logo">
+      <div class="golden-ring"></div>
+    </div>
+</div>
+  
+<!-- Navigation Bar -->
+<nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            
+            <!-- Website logo -->
+            <span class="logo navLogo">
+                <img src="images/logo1.png" alt="logo">   
+            </span>
+
+            <!-- Menu container -->
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo">
+                      <img src="images/logo.png" alt="logo">
+                    </span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="media-press.html">Media & Press</a></li>
+                  <li><a href="contact.html">Contact US</a></li>
+                </ul>
+            </div>
+
+            <!-- Dark/Light Mode Toggle and Search Box -->
+            <div class="darkLight-searchBox">
+                
+                <!-- Dark and light mode toggle icons -->
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i> <!-- Moon icon for dark mode -->
+                    <i class='bx bx-sun sun'></i>   <!-- Sun icon for light mode -->
+                </div>
+
+                <!-- Search Box -->
+                <div class="searchBox">
+                    <!-- Toggle buttons for search box (open/close) -->
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>    <!-- Close icon for search box -->
+                        <i class='bx bx-search search'></i> <!-- Search icon to open search box -->
+                    </div>
+
+                    <!-- Search input field -->
+                    <div class="search-field">
+                        <input type="text" placeholder="Search..."> <!-- Search input box -->
+                        <i class='bx bx-search'></i> <!-- Search icon next to input field -->
+                    </div>
+                </div>
+            </div>
+        </div>
+</nav>
+
+<section class="contact-hero">
+    <h2>Connect with Gillania</h2>
+    <p>We are your gateway to elite investments. Let’s connect.</p>
+</section>
+  
+<section class="contact-main">
+    <div class="contactus">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">Street No: 123, </div>
+            <div class="text-two">London, UK</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-one">+44 9893 5647</div>
+            <div class="text-two">+44 3434 5678</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">gillaniagroup@gmail.com</div>
+            <div class="text-two">info.gillaniagroup@gmail.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Get In Touch</div>
+          <p>Have questions about our investment opportunities? Reach out to our team for personalized consultation.</p>
+          
+            <form id="contactForm" method="POST" action="contact.php">
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" name="name" placeholder=" " required>
+              <label for="name">Full Name</label>
+            </div>
+
+            <div class="form-group">
+              <input type="email" class="form-control" name="email" id="email" placeholder=" " required>
+              <label for="email">Email Address</label>
+            </div>
+            
+            <div class="form-group">
+              <input type="tel" class="form-control" name="phone" id="phone" placeholder=" ">
+              <label for="phone">Phone Number</label>
+            </div>
+            
+            <div class="form-group">
+              <div class="select-wrapper">
+                <select class="form-control" name="inquiry" id="inquiry" required>
+                  <option value="" disabled selected></option>
+                  <option value="investor">Investor Inquiry</option>
+                  <option value="partner">Partnership Opportunity</option>
+                  <option value="media">Media Request</option>
+                  <option value="other">Other</option>
+                </select>
+                <label for="inquiry">Inquiry Type</label>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <textarea class="form-control" name="message" id="message" placeholder=" " required></textarea>
+              <label for="message">Your Message</label>
+            </div>
+
+            <button type="submit" class="submit-btn">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+</section>
+  
+<!-- Global Offices Map -->
+<section class="contact-map">
+    <h3>Global Offices</h3>
+    <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3609.857821147895!2d55.14056301501074!3d25.077220183961692!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f6be2693e3abf%3A0x8d7a4e9ebc89e6b9!2sDubai%20Marina!5e0!3m2!1sen!2sae!4v1613833123456" 
+    allowfullscreen 
+    loading="lazy">
+  </iframe>
+</section>
+  
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Gillania Group</h3>
+        <p>Empowering elite investments in luxury, real estate, and innovation.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="media-press.html">Media & Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Investments</h4>
+          <ul>
+            <li><a href="#">Real Estate</a></li>
+            <li><a href="#">Luxury Assets</a></li>
+            <li><a href="#">Private Equity</a></li>
+            <li><a href="#">Stocks</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Gillania Group. All rights reserved.</p>
+    </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Prevent default form submission
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch("contact.php", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.text())
+    .then(result => {
+      if (result.includes("Submission saved successfully")) {
+        showToast("✅ Thank you! Your message has been received.", "success");
+        form.reset(); // Clear the form
+      } else {
+        showToast("❌ Oops! Something went wrong.", "error");
+      }
+    })
+    .catch(error => {
+      alert("Error: " + error);
+    });
+  });
+</script>
+<script>
+  function showToast(message, type = 'success') {
+    const toast = document.createElement('div');
+    toast.className = `toast ${type}`;
+    toast.innerText = message;
+  
+    document.body.appendChild(toast);
+  
+    // Show it
+    setTimeout(() => toast.classList.add('show'), 100);
+  
+    // Hide after 3 seconds
+    setTimeout(() => {
+      toast.classList.remove('show');
+      setTimeout(() => document.body.removeChild(toast), 300);
+    }, 3000);
+  }
+  </script>
+  
+  
+</body>
+</html>
