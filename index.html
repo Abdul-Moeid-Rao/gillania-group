@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/logo1.png">
+  <title>Gillania Group</title>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+</head>
+<body>
+
+<!-- Preloader -->
+<div id="preloader">
+  <div class="preloader-inner">
+    <img src="images/logo1.png" alt="Gillania Group Logo" class="preloader-logo">
+    <div class="golden-ring"></div>
+  </div>
+</div>
+
+<!-- Navigation Bar -->
+<nav>
+        <div class="nav-bar">
+            <i class='bx bx-menu sidebarOpen'></i>
+            
+            <!-- Website logo -->
+            <span class="logo navLogo">
+                <img src="images/logo1.png" alt="logo">   
+            </span>
+
+            <!-- Menu container -->
+            <div class="menu">
+                <div class="logo-toggle">
+                    <span class="logo">
+                      <img src="images/logo.png" alt="logo">
+                    </span>
+                    <i class='bx bx-x siderbarClose'></i>
+                </div>
+
+                <!-- Navigation Links -->
+                <ul class="nav-links">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="media-press.html">Media & Press</a></li>
+                  <li><a href="contact.html">Contact US</a></li>
+                </ul>
+            </div>
+
+            <!-- Dark/Light Mode Toggle and Search Box -->
+            <div class="darkLight-searchBox">
+                
+                <!-- Dark and light mode toggle icons -->
+                <div class="dark-light">
+                    <i class='bx bx-moon moon'></i> <!-- Moon icon for dark mode -->
+                    <i class='bx bx-sun sun'></i>   <!-- Sun icon for light mode -->
+                </div>
+
+                <!-- Search Box -->
+                <div class="searchBox">
+                    <!-- Toggle buttons for search box (open/close) -->
+                    <div class="searchToggle">
+                        <i class='bx bx-x cancel'></i>    <!-- Close icon for search box -->
+                        <i class='bx bx-search search'></i> <!-- Search icon to open search box -->
+                    </div>
+
+                    <!-- Search input field -->
+                    <div class="search-field">
+                        <input type="text" placeholder="Search..."> <!-- Search input box -->
+                        <i class='bx bx-search'></i> <!-- Search icon next to input field -->
+                    </div>
+                </div>
+            </div>
+        </div>
+</nav>
+
+<!-- Hero Section -->
+<div class="hero">
+  <div class="hero-slide active">
+    <video autoplay muted playsinline preload="auto">
+      <source src="images/videos/villa (3).mp4" type="video/mp4" media="(min-width: 1024px)">
+      <source src="images/videos/villa (3).mp4" type="video/mp4" media="(max-width: 1023px)">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Welcome to Gillania Group</h1>
+      <p>Empowering the World’s Elite with Strategic Investments.</p>
+      <button class="cta-button" onclick="window.location.href='portfolio.html'">Explore Our Portfolio</button>
+    </div>
+  </div>
+
+  <div class="hero-slide">
+    <video muted playsinline preload="auto">
+      <source src="images/videos/jets (2).mp4" type="video/mp4" media="(min-width: 1024px)">
+      <source src="images/videos/jets (2).mp4" type="video/mp4" media="(max-width: 1023px)">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Luxury Takes Flight</h1>
+      <p>Private jets redefining executive mobility.</p>
+      <button class="cta-button" onclick="window.location.href='portfolio.html'">Explore Our Portfolio</button>
+    </div>
+  </div>
+
+  <div class="hero-slide">
+    <video muted playsinline preload="auto">
+      <source src="images/videos/yacht (1).mp4" type="video/mp4" media="(min-width: 1024px)">
+      <source src="images/videos/yacht (1).mp4" type="video/mp4" media="(max-width: 1023px)">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Luxury at Sea</h1>
+      <p>Yacht assets that cruise toward unmatched value.</p>
+      <button class="cta-button" onclick="window.location.href='portfolio.html'">Explore Our Portfolio</button>
+    </div>
+  </div>
+
+  <div class="hero-slide">
+    <video muted playsinline preload="auto">
+      <source src="images/videos/villa (4).mp4" type="video/mp4" media="(min-width: 1024px)">
+      <source src="images/videos/villa (4).mp4" type="video/mp4" media="(max-width: 1023px)">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+      <h1>Architects of the Future</h1>
+      <p>We invest in structures that shape tomorrow's cities.</p>
+      <button class="cta-button" onclick="window.location.href='portfolio.html'">Explore Our Portfolio</button>
+    </div>
+  </div>
+  <!-- Add more slides similarly -->
+
+  <div class="hero-buttons">
+    <button class="active" onclick="showSlide(0)"></button>
+    <button onclick="showSlide(1)"></button>
+    <button onclick="showSlide(2)"></button>
+    <button onclick="showSlide(3)"></button>
+    <!-- Add more buttons for additional slides -->
+  </div>
+</div>
+
+<!-- Upgraded Ticker Section -->
+<div class="ticker-wrapper">
+  <div class="ticker-label">Gillania Market Pulse</div>
+  <div class="ticker">
+    <div class="ticker-content" id="tickerText">
+      <!-- JS will populate this -->
+    </div>
+  </div>
+  <div class="ticker-cta">
+    <a href="#" class="cta-link">View Full Portfolio Performance</a>
+  </div>
+</div>
+
+<!-- investments-section -->
+<section class="investments-section">
+    <h2 class="section-title">Key Investment Areas</h2>
+    <div class="investment-cards">
+      <div class="investment-card">
+        <i class="fas fa-chart-line"></i>
+        <h3>Stocks</h3>
+        <p>Diversified equity investments offering growth and income potential.</p>
+      </div>
+      <div class="investment-card">
+        <i class="fas fa-building"></i>
+        <h3>Real Estate</h3>
+        <p>Premium commercial and residential properties in global markets.</p>
+      </div>
+      <div class="investment-card">
+        <i class="fas fa-gem"></i>
+        <h3>Luxury Assets</h3>
+        <p>Rare collectibles, fine art, vintage cars, and high-end jewelry.</p>
+      </div>
+      <div class="investment-card">
+        <i class="fas fa-user-tie"></i>
+        <h3>Private Equity</h3>
+        <p>Strategic stakes in innovative startups and elite ventures.</p>
+      </div>
+    </div>
+</section>
+  
+<!-- featured-assets-section -->
+<section class="featured-assets-section">
+  <h2 class="section-title">Featured Projects & Assets</h2>
+
+  <div class="gallery">
+
+    <!-- Asset: Yacht -->
+    <div class="image-wrapper four-grid-cells">
+      <video src="images/videos/yacht (2).mp4" autoplay muted loop playsinline></video>
+      <div class="info-overlay">
+        <h3>Luxury Yacht Showcase</h3>
+        <p>Explore high-seas elegance and elite maritime investment.</p>
+      </div>
+    </div>
+
+    <!-- Asset: Villa -->
+    <div class="image-wrapper wide-image">
+      <video src="images/videos/villa (5).mp4" autoplay muted loop playsinline></video>
+      <div class="info-overlay">
+        <h3>Modern Luxury Villa</h3>
+        <p>Discover sustainable architecture with premium rental ROI.</p>
+      </div>
+    </div>
+
+    <!-- Asset: Jet 1 -->
+    <div class="image-wrapper wide-image">
+      <video src="images/videos/jets (2).mp4" autoplay muted loop playsinline></video>
+      <div class="info-overlay">
+        <h3>Gulfstream Jet G700</h3>
+        <p>Experience ultra-luxury air travel and charter potential.</p>
+      </div>
+    </div>
+
+    <!-- Asset: Car -->
+    <div class="image-wrapper wide-image">
+      <video src="images/videos/car1.mp4" autoplay muted loop playsinline></video>
+      <div class="info-overlay">
+        <h3>Hypercar Drive</h3>
+        <p>A roaring asset in the exotic car investment segment.</p>
+      </div>
+    </div>
+
+    <!-- Asset: Jet 2 -->
+    <div class="image-wrapper wide-image">
+      <video src="images/videos/villa (4).mp4" autoplay muted loop playsinline></video>
+      <div class="info-overlay">
+        <h3>Executive Villa</h3>
+        <p>Private aviation redefined for business class elite.</p>
+      </div>
+    </div>
+
+    <!-- Asset: Corporate HQ -->
+    <div class="image-wrapper wide-image">
+      <video src="images/videos/villa (3).mp4" autoplay muted loop playsinline></video>
+      <div class="info-overlay">
+        <h3>Boardroom Innovation HQ</h3>
+        <p>High-end office real estate that fuels corporate influence.</p>
+      </div>
+    </div>
+
+    <!-- Asset: Skyscraper -->
+    <div class="image-wrapper wide-image">
+      <video src="images/videos/villla (6).mp4" autoplay muted loop playsinline></video>
+      <div class="info-overlay">
+        <h3>Skyline Investment Tower</h3>
+        <p>ROI: High-demand location driving rental yield</p>
+      </div>
+    </div>
+
+    
+  </div>
+
+  <!-- Explore More Button -->
+  <div class="explore-more-container" style="text-align: center; margin-top: 2rem;">
+    <a href="projects.html" class="explore-more-btn" style="display: inline-block; padding: 12px 28px; background-color: #000; color: #fff; text-decoration: none; font-size: 1rem; border-radius: 8px; transition: background 0.3s;">
+      Explore More Projects
+    </a>
+  </div>
+</section>
+
+
+<!-- media-section -->
+<section class="media-section">
+    <h2 class="section-title">Media Mentions & Testimonials</h2>
+  <div class="container">
+    
+<div class="card">
+  <div class="card__header">
+    <img src="images/skyscrap1.jpg" alt="Investment Image" class="card__image" width="600">
+  </div>
+  <div class="card__body">
+    <span class="tag tag-blue">Investments</span>
+    <h4>Global Dominance in Strategic Investments</h4>
+    <p>Gillania Group leads elite investment portfolios in real estate, tech, and private equity across the UK, UAE, Pakistan, and more. We deliver unmatched ROI and sustainable growth.</p>
+  </div>
+  <div class="card__footer">
+    <div class="user">
+      <img src="https://i.pravatar.cc/40?img=3" alt="Faraz Gillani" class="user__image">
+      <div class="user__info">
+        <h5>Faraz Gillani</h5>
+        <small>Founder & Chairman</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__header">
+    <img src="images/meeting3.jpg" alt="Real Estate Image" class="card__image" width="600">
+  </div>
+  <div class="card__body">
+    <span class="tag tag-gold">Real Estate</span>
+    <h4>Skyline Investments Redefined</h4>
+    <p>From iconic towers in Dubai to prime properties in London, Gillania Group redefines luxury living and commercial spaces with strategic real estate acquisitions.</p>
+  </div>
+  <div class="card__footer">
+    <div class="user">
+      <img src="https://i.pravatar.cc/40?img=2" alt="Sarah Malik" class="user__image">
+      <div class="user__info">
+        <h5>Sarah Malik</h5>
+        <small>VP, Real Estate Division</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__header">
+    <img src="images/yatch3.jpg" alt="Luxury Asset Image" class="card__image" width="600">
+  </div>
+  <div class="card__body">
+    <span class="tag tag-red">Luxury Assets</span>
+    <h4>Investing in Timeless Prestige</h4>
+    <p>Our portfolio features elite assets — from supercars and art collections to private jets and mega yachts — symbolizing the lifestyle of ultra-high-net-worth individuals.</p>
+  </div>
+  <div class="card__footer">
+    <div class="user">
+      <img src="https://i.pravatar.cc/40?img=3" alt="Zayn Alvi" class="user__image">
+      <div class="user__info">
+        <h5>Zayn Alvi</h5>
+        <small>Director, Luxury Assets</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__header">
+    <img src="images/dst.webp" alt="Tech Ventures" class="card__image" width="600">
+  </div>
+  <div class="card__body">
+    <span class="tag tag-blue">Technology</span>
+    <h4>Driving Innovation Across Borders</h4>
+    <p>Gillania Group pioneers tech ventures in AI, fintech, and green energy startups in Romania, UK, and beyond, creating a future-forward ecosystem of investments.</p>
+  </div>
+  <div class="card__footer">
+    <div class="user">
+      <img src="https://i.pravatar.cc/40?img=4" alt="Ali Qureshi" class="user__image">
+      <div class="user__info">
+        <h5>Ali Qureshi</h5>
+        <small>Chief Technology Officer</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__header">
+    <img src="images/infrastructure.jpg" alt="Middle East Expansion" class="card__image" width="600">
+  </div>
+  <div class="card__body">
+    <span class="tag tag-gold">Gulf Expansion</span>
+    <h4>Strategic Growth in Saudi Arabia</h4>
+    <p>With mega projects in Riyadh and Jeddah, Gillania Group strengthens its influence in Saudi Arabia’s booming financial and infrastructure sectors.</p>
+  </div>
+  <div class="card__footer">
+    <div class="user">
+      <img src="https://i.pravatar.cc/40?img=6" alt="Amna Yousuf" class="user__image">
+      <div class="user__info">
+        <h5>Amna Yousuf</h5>
+        <small>Head of MENA Region</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card__header">
+    <img src="images/news.jpg" alt="Global Branding" class="card__image" width="600">
+  </div>
+  <div class="card__body">
+    <span class="tag tag-blue">Brand Identity</span>
+    <h4>Global Recognition in Media</h4>
+    <p>Gillania Group featured in Forbes, Gulf News, and The Times as a benchmark in global luxury investments and cross-border partnerships.</p>
+  </div>
+  <div class="card__footer">
+    <div class="user">
+      <img src="https://i.pravatar.cc/40?img=8" alt="PR Manager" class="user__image">
+      <div class="user__info">
+        <h5>Sana Khurshid</h5>
+        <small>Global PR Manager</small>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+  </div>
+</section> 
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Gillania Group</h3>
+        <p>Empowering elite investments in luxury, real estate, and innovation.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="media-press.html">Media & Press</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Investments</h4>
+          <ul>
+            <li><a href="#">Real Estate</a></li>
+            <li><a href="#">Luxury Assets</a></li>
+            <li><a href="#">Private Equity</a></li>
+            <li><a href="#">Stocks</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-social">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Gillania Group. All rights reserved.</p>
+    </div>
+</footer>
+  
+<button class="contact-btn" onclick="window.location.href='contact.html'">Let’s Talk</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
